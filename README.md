@@ -19,7 +19,7 @@ so the architecture for this project is as follows
 we will write a python code using lambda function , the module that is going to be used in python is boto3 and this python code will talk to the aws APIs therfore 
 step 1 : fetch all the snapshots 
 step2 : filter the snapshots that are stale 
-step3 : delte the snapshots 
+step3 : delte the snapshotss
 
 
  

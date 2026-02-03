@@ -21,5 +21,9 @@ step1 : fetch all the snapshots
 step2 : filter the snapshots that are stale   
 step3 : delte the snapshotss  
 
+when eexecuting the project it will face some problems   
+1: Lambda execution time is 3 therefore if there are many snapshots it will take time to fetch those in the first step therefore it will fails  therefore increase the execution time to atleast 10    
+2: Lmbda function also needs to least down all the snapshots and delete them teherfore we must add permission policies such as DescribeSnapshots and DeleteSnapshos    
+3: Lambda functon als needs to least down the volumes as well because snapshots belong to the volumes and volumes belongs to the ec2 tehrefore we need to add permisions like DescribeInstance DescribeVolume   
 
- 
+FINALLY THE PROJECT DELETES THE STALE SNAPSHOTS AND ALSO THE SNAPSHOTS THAt ARE ATTACHED TO THE VOLUME WHICH ARE  NOT ASSOCIATED WITH EC2

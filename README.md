@@ -16,7 +16,7 @@ now the problem is aws charges for this stored snapshots
 so enorder to delte the snapshots that are associated with volume but not associated with ec2 we are creating this project 
 
 so the architecture for this project is as follows 
-we will write a python code using lambda function , the module that is going to be used in python is boto3 and this python code will talk to the aws APIs therfore 
+we will write a python code using lambda function , the module that is going to be used in python is boto3 and this python code will talk to the aws APIs therfore   
 step1 : fetch all the snapshots     
 step2 : filter the snapshots that are stale   
 step3 : delte the snapshotss  
